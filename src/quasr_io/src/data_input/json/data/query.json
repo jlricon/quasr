@@ -1,0 +1,53 @@
+{
+  "dataQuery": {
+    "metrics": [
+      {
+        "metricName": "attribution",
+        "metricType": "upperFunnelMetric"
+      },
+      { "metricName": "Cost", "metricType": "upperFunnelMetric" },
+
+      {
+        "metricType": "summationMetric",
+        "metrics": [
+          {
+            "metricName": "attribution",
+            "metricType": "upperFunnelMetric"
+          }
+        ]
+      }
+    ],
+    "filters": {
+      "time": [
+        {
+          "value": {
+            "startDate": "2018-09-18",
+            "endDate": "2018-09-25"
+          }
+        }
+      ],
+      "marketingNode": [
+        {
+          "level": "campaign",
+          "value": "campaignId"
+        },
+        {
+          "level": "campaign",
+          "value": "mnode1"
+        }
+      ],
+
+      "adPlatform": [
+        {
+          "level": "adPlatform",
+          "value": "facebook"
+        }
+      ]
+    },
+    "breakdowns": {
+      "time": "daily",
+      "marketingNode": "ad"
+    }
+  },
+  "orgId": "8321"
+}

@@ -1,0 +1,7 @@
+/target
+**/*.rs.bk
+aiden
+database.sqlite
+test_db Session.sql
+.idea
+.env

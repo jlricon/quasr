@@ -1,0 +1,32 @@
+{
+  "dataQuery": {
+    "metrics": [
+      {
+        "metricType": "divisionMetric",
+        "numerator": {
+          "metricType": "upperFunnelMetric",
+          "metricName": "Cost"
+        },
+        "denominator": {
+          "metricType": "summationMetric",
+          "metrics": [
+            { "metricType": "upperFunnelMetric", "metricName": "Install" },
+            { "metricType": "upperFunnelMetric", "metricName": "Other Install" }
+          ]
+        }
+      }
+    ],
+    "filters": {
+      "time": [
+        {
+          "value": {
+            "startDate": "2018-09-18",
+            "endDate": "2018-09-25"
+          }
+        }
+      ]
+    }
+  },
+
+  "orgId": "8321"
+}
