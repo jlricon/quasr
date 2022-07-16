@@ -19,3 +19,5 @@ quasr_io = { path = "src/quasr_io" }
 quasr_core={path="src/quasr_core"}
 serde_json="*"
 dotenv="*"
+[toolchain]
+channel = "nightly"
